@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home/Home';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App flex h-screen items-center justify-center">
-      <h1 className='text-5xl'>mern portfolio</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
