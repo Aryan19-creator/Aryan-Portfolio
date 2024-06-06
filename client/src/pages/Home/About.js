@@ -1,10 +1,11 @@
 import SectionTitle from "../../components/SectionTitle";
 
 function About(){
+    const skills=["C","C++","Javascript","React.Js","Node.Js","C#",".NET","MongoDb","Sql"]
     return (
       <div>
         <SectionTitle title="About" />
-        <div className="flex">
+        <div className="flex w-full items-center">
           <div className="h-[70vh] w-1/2">
             <dotlottie-player
               src="https://lottie.host/d87d83ff-1a0e-47e8-8686-0846dba3c956/DXlswqrvUn.json"
@@ -41,6 +42,20 @@ function About(){
                 problem-solving and passion for technology drive me to seek
                 opportunities where I can make a meaningful impact.
               </p>
+            </div>
+          </div>
+          <div className="py-5">
+            <h1 className="text-tertiary text-xl">
+                Here are a few technologies I've been working with recently:
+            </h1>
+            <div className="flex flex-wrap gap-10 mt-5">
+                {
+                    skills.map((skill,index)=>(
+                        <div className="border border-tertiary py-3 px-10">
+                            <h1 className="text-tertiary">{skill}</h1>
+                        </div>
+                    ))
+                }
             </div>
           </div>
         </div>
