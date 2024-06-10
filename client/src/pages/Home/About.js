@@ -5,8 +5,8 @@ function About(){
     return (
       <div>
         <SectionTitle title="About" />
-        <div className="flex w-full items-center">
-          <div className="h-[70vh] w-1/2">
+        <div className="flex w-full items-center sm: flex-col">
+          <div className="h-[70vh] w-1/2 sm:w-full">
             <dotlottie-player
               src="https://lottie.host/d87d83ff-1a0e-47e8-8686-0846dba3c956/DXlswqrvUn.json"
               background="transparent"

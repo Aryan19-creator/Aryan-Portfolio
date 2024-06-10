@@ -6,9 +6,9 @@ import About from "./About";
 function Home()
 {
     return (
-        <div className="bg-primary px-40">
+        <div>
             <Header/>
-            <div className="bg-primary px-40">
+            <div className="bg-primary px-40 sm:px-5">
                 <Intro/>
                 <About/>
             </div>
